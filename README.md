@@ -37,5 +37,5 @@ a**\_e**e | vies : 8
 ## Lancer le jeu
 
 ```bash
-python ton_script.py
+python index.py
 ```
