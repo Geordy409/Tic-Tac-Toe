@@ -1,23 +1,26 @@
-# 🎮 Jeu du Morpion en Python
+# 🎮 Jeu du Morpion en Python (avec interface graphique Tkinter)
 
-Un petit projet en Python pour jouer au **Morpion (Tic-Tac-Toe)** en mode console à deux joueurs.
-
-## 🧠 Objectif
-
-Deux joueurs s'affrontent à tour de rôle pour placer leur symbole (`X` pour Joueur 1, `O` pour Joueur 2) sur une grille 3x3. Le premier à aligner trois symboles horizontalement, verticalement ou en diagonale gagne la partie.
+Un projet en Python pour jouer au **Morpion (Tic-Tac-Toe)** en mode graphique à deux joueurs, utilisant une interface simple et intuitive réalisée avec Tkinter.
 
 ---
 
-## ⚙️ Fonctionnalités
+## 🧠 Objectif
 
-- Grille 3x3 initialisée avec des cases vides.
-- Tour par tour entre Joueur 1 et Joueur 2.
+Deux joueurs s'affrontent à tour de rôle pour placer leur symbole (`X` pour Joueur 1, `O` pour Joueur 2) sur une grille 3×3. Le premier à aligner trois symboles horizontalement, verticalement ou en diagonale remporte la partie.
+
+---
+
+## ⚙️ Fonctionnalités principales
+
+- Grille 3×3 interactive avec boutons pour chaque case
+- Tour par tour entre Joueur 1 (`X`) et Joueur 2 (`O`)
 - Détection automatique de :
-  - ✅ Victoire
-  - 🤝 Match nul (égalité)
+  - ✅ Victoire (alignement de trois symboles)
+  - 🤝 Match nul (grille remplie sans vainqueur)
 - 🔒 Gestion des erreurs :
-  - Empêche les joueurs de saisir une case déjà occupée
-  - Empêche les entrées invalides (hors de 1 à 9)
+  - Empêche de jouer sur une case déjà occupée
+- Messages popup pour annoncer le résultat (victoire ou égalité)
+- Bouton **🔁 Rejouer** pour recommencer une partie proprement
 
 ---
 
@@ -25,8 +28,12 @@ Deux joueurs s'affrontent à tour de rôle pour placer leur symbole (`X` pour Jo
 
 ### Prérequis
 
-- Python 3.x
+- Python 3.x (pour l'exécution du script)
 - Bibliothèque `numpy`
+- Tkinter (inclus par défaut sous Windows et macOS, sinon installer le paquet `python3-tk` sous Linux)
+- python index.py pour lancer le jeu
+
+### Installer numpy
 
 ```bash
 pip install numpy
