@@ -1,41 +1,33 @@
-# Jeu du Pendule (Jeu du Pendu)
+# 🎮 Jeu du Morpion en Python
 
-## Description
+Un petit projet en Python pour jouer au **Morpion (Tic-Tac-Toe)** en mode console à deux joueurs.
 
-Ce projet est une implémentation simple du jeu du pendule (ou jeu du pendu) en Python.  
-Le joueur doit deviner un mot secret lettre par lettre.  
-Le joueur dispose d'un nombre limité de vies (9) avant de perdre la partie.
+## 🧠 Objectif
 
-## Fonctionnement
+Deux joueurs s'affrontent à tour de rôle pour placer leur symbole (`X` pour Joueur 1, `O` pour Joueur 2) sur une grille 3x3. Le premier à aligner trois symboles horizontalement, verticalement ou en diagonale gagne la partie.
 
-- Le jeu choisit un mot au hasard parmi une liste prédéfinie.
-- Le joueur entre une lettre à chaque tour.
-- Si la lettre est dans le mot, elle est dévoilée dans la position correspondante.
-- Sinon, le joueur perd une vie.
-- Le jeu continue jusqu'à ce que le mot soit entièrement découvert ou que le joueur n'ait plus de vies.
+---
 
-## Comment jouer
+## ⚙️ Fonctionnalités
 
-1. Lancez le script Python.
-2. Entrez une lettre à chaque tour lorsque vous êtes invité.
-3. Essayez de deviner le mot secret avant d'épuiser toutes vos vies.
+- Grille 3x3 initialisée avec des cases vides.
+- Tour par tour entre Joueur 1 et Joueur 2.
+- Détection automatique de :
+  - ✅ Victoire
+  - 🤝 Match nul (égalité)
+- 🔒 Gestion des erreurs :
+  - Empêche les joueurs de saisir une case déjà occupée
+  - Empêche les entrées invalides (hors de 1 à 9)
 
-## Exemple d'exécution
+---
 
-**\_\_\_\_** | vies : 9
-Entrez une lettre : a
-a**\_\_\_** | vies : 9
-Entrez une lettre : e
-a**\_e**e | vies : 9
-Entrez une lettre : x
-a**\_e**e | vies : 8
+## ▶️ Lancer le jeu
 
-## Prérequis
+### Prérequis
 
 - Python 3.x
-
-## Lancer le jeu
+- Bibliothèque `numpy`
 
 ```bash
-python index.py
+pip install numpy
 ```
